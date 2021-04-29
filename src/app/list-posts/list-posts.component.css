@@ -1,0 +1,13 @@
+.post-wrapper {
+  padding: 15px 0;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.post-title {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.post-desc {
+  color: #808080;
+}

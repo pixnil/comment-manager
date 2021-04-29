@@ -1,0 +1,50 @@
+.post-wrapper {
+  padding: 15px 0;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.post-title {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.post-desc {
+  color: #808080;
+}
+
+.comment-container {
+  padding: 15px 0;
+  border-bottom: 1px solid #c5c5c5;
+  margin-bottom: 15px;
+}
+
+.comment-container:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.email {
+  font-style: italic;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+.user {
+  font-weight: bold;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .search-wrapper {
+    flex-direction: column;
+    height: 90px;
+  }
+
+  input {
+    width: 100%;
+  }
+}

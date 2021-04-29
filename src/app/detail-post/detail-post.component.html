@@ -1,0 +1,29 @@
+<div>
+  <a href="javascript:void(0)" (click)="goBack()">Back</a>
+<div class="post-wrapper">
+    <div class="post-title">{{detailPost.title}}</div>
+    <div class="post-desc">{{detailPost.body}}</div>
+  </div>
+  <div class="comments-wrapper">
+    <h4>Comments</h4>
+    <div>
+      <h5>Search</h5>
+      <div class="search-wrapper">
+        <div>
+          <input type="text" placeholder="By Name" [(ngModel)]="search.name" />
+        </div>
+        <div>
+          <input type="text" placeholder="By Email" [(ngModel)]="search.email" />
+        </div>
+        <div>
+          <input type="text" placeholder="By Comment" [(ngModel)]="search.body" />
+        </div>
+      </div>
+    </div>
+    <div class="comment-container" *ngFor="let comment of postComments | comments:search">
+      <div class="user">User: {{comment.name}}</div>
+      <div class="email">Email: {{comment.email}}</div>
+      <div class="cmnt-body">{{comment.body}}</div>
+    </div>
+  </div>
+</div>
